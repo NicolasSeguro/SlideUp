@@ -1,0 +1,36 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FadeOut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="scripts/jquery-3.3.1.min.js"></script>   
+    <style>
+        div {
+          background: #de9a44;
+          margin: 3px;
+          width: 80px;
+          height: 40px;
+          display: none;
+          float: left;
+        }
+        </style>
+</head>
+<body>
+    Click me!
+    <div><img src="img/descarga.jpg" alt=""></div>
+    
+     
+    <script>
+    $( document.body ).click(function () {
+      if ( $( "div:first" ).is( ":hidden" ) ) {
+        $( "div" ).slideDown( "slow" );
+      } else {
+        $( "div" ).hide();
+      }
+    });
+    </script>
+</body>
+</html>
